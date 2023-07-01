@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="app.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="fontawesome-free-6.4.0-web/css/all.css" />
+    <title>GroceryBud-todo</title>
+  </head>
+  <body class="bg-sky-50 flex justify-center py-16 pt-32">
+    <main
+      class="bg-white w-[450px] rounded py-4 px-8 flex flex-col justify-between "
+    >
+      <!-- form -->
+      <form class="grocery-form mb-8">
+        <p
+          class="alert text-center tracking-widest mb-4 h-5 capitalize w-full text-xs"
+        ></p>
+        <div class="form-control">
+          <h1
+            class="heading font-medium text-md text-center tracking-widest text-sky-950 mb-4"
+          >
+            Grocery Bud
+          </h1>
+          <div class="input-section w-full flex rounded-md box-border h-7">
+            <input
+              type="text"
+              class="w-10/12 rounded-s-md box-border focus:outline-offset-[0px] focus:outline-blue-300 focus:rounded-sm focus focus:border-blue-400 focus:border-[3px] bg-sky-50 tracking-widest"
+              placeholder="e.g. eggs"
+            />
+            <button
+              class="submit-btn w-2/12 bg-sky-200 rounded-e-md text-xs tracking-widest hover:bg-blue-400 hover:text-white active:rounded-sm focus active:outline-blue-800 active:outline-[2px] active:outline transition-all capitalize"
+            >
+              Submit
+            </button>
+          </div>
+        </div>
+      </form>
+      <!-- end of form -->
+      <!-- list -->
+      <div class="grocery-container">
+        <div class="grocery-list mb-4"></div>
+        <!-- button -->
+        <button
+          type="button"
+          class="clear-btn text-center w-full text-xs tracking-widest text-red-600"
+        >
+          clear items
+        </button>
+      </div>
+    </main>
+  </body>
+</html>
