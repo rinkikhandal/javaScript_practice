@@ -5,11 +5,11 @@ import { displayItems } from "./displayProducts.js";
 const displayCompany = (companies, element) => {
   element.innerHTML = companies
     .map((company) => {
-      return ` <li class="cyan-color">${company}</li>`;
+      return ` <button class="cyan-color compBtn">${company}</button>`;
     })
     .join("");
 
-  const companySearch = element.querySelectorAll("li");
+  const companySearch = element.querySelectorAll(".compBtn");
 
   companySearch.forEach((company) => {
     company.addEventListener("click", (e) => {

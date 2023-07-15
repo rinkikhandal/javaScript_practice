@@ -570,6 +570,9 @@ nav {
   grid-column-end: 4;
   font-weight: 100;
   margin: 4rem 0 2rem;
+  text-transform: capitalize;
+  color: var(--clr-primary3-blue);
+  letter-spacing: var(--letterspacing-para);
 }
 
 /* =======MEDIA SETTINGS / HOME PAGE & NAV ======= */
@@ -800,6 +803,11 @@ nav {
   margin: 2rem 0 0;
 }
 
+.choiceBar {
+  padding-top: 2rem;
+  width: 200px;
+}
+
 .searchBar {
   outline: none;
   border: none;
@@ -807,11 +815,25 @@ nav {
   border-radius: var(--radius-small);
   padding: 8px 10px;
   margin: 0 0 20px;
+  text-transform: lowercase;
+}
+
+.searchBar:focus {
+  box-sizing: border-box;
+  outline: 2px solid var(--clr-primary-blue);
 }
 
 input.searchBar[type="text"] {
   font-size: 0.9rem;
   letter-spacing: var(--letterspacing-para);
+}
+.comp_names .compBtn {
+  display: block;
+}
+
+.comp_names .compBtn:focus {
+  color: var(--clr-primary-blue);
+  font-weight: 600;
 }
 
 .cyan-color {
@@ -820,11 +842,6 @@ input.searchBar[type="text"] {
   letter-spacing: 1px;
   margin: 10px 0;
   cursor: pointer;
-}
-
-.choiceBar {
-  padding-top: 2rem;
-  width: 200px;
 }
 
 .companies h4 {
@@ -848,8 +865,9 @@ input.searchBar[type="text"] {
 
 .pro-page {
   display: grid;
-  padding: 2rem 0;
+  padding: 2rem 0 4rem;
   text-align: center;
+  row-gap: 1rem;
 }
 
 /* =========MEDIA SETTINGS OF PRODUCTS PAGE======= */
@@ -870,7 +888,7 @@ input.searchBar[type="text"] {
 
   .choiceBar {
     position: sticky;
-    height: 100vh;
+    max-height: 100vh;
     top: 0;
     width: 200px;
   }

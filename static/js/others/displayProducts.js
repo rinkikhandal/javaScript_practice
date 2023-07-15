@@ -104,7 +104,7 @@ const displayCartItems = (products, element) => {
         ).textContent;
       const quantity = e.currentTarget.parentElement.querySelector("p");
 
-      quantity.textContent = Number(quantity.textContent) + 1;
+      quantity.textContent = parseInt(quantity.textContent) + 1;
 
       increment(name);
     });
@@ -122,7 +122,7 @@ const displayCartItems = (products, element) => {
         ).textContent;
 
       const quantity = e.currentTarget.parentElement.querySelector("p");
-      const quantityNumber = Number(quantity.textContent);
+      const quantityNumber = parseInt(quantity.textContent);
 
       if (quantityNumber > 1) {
         quantity.textContent = `${quantityNumber - 1}`;
