@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../static/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="../static/fontawesome-free-6.4.0-web/css/all.css"
+    />
+    <title>Comfy | about</title>
+  </head>
+  <body>
+    <nav>
+      <!-- links -->
+      <div class="menu">
+        <div class="bar">
+          <i class="fa-solid fa-bars fa-2x"></i>
+        </div>
+        <div class="links-nav">
+          <div class="links-wrapper black">
+            <a href="./home.html">Home</a>
+            <a href="./products.html" class="active">Products</a>
+            <a href="./about.html">About</a>
+          </div>
+        </div>
+      </div>
+      <!-- logo -->
+      <h2 class="logo-black">Comfy</h2>
+      <!-- cart -->
+      <div class="cart">
+        <i class="fa-solid fa-cart-shopping fa-2x cart-black"></i>
+
+        <span class="cart-no"> 0</span>
+      </div>
+    </nav>
+    <!-- sidebar links -->
+    <div class="links">
+      <div class="links-container">
+        <i class="fa-solid fa-xmark fa-2x cross-nav"></i>
+        <a href="home.html"
+          ><svg
+            height="25px"
+            width="25px"
+            version="1.1"
+            id="_x32_"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 0 512 512"
+            xml:space="preserve"
+          >
+            <g>
+              <polygon
+                class="st0"
+                points="434.162,293.382 434.162,493.862 308.321,493.862 308.321,368.583 203.682,368.583 203.682,493.862 
+    77.841,493.862 77.841,293.382 256.002,153.862 	"
+              />
+              <polygon
+                class="st0"
+                points="0,242.682 256,38.93 512,242.682 482.21,285.764 256,105.722 29.79,285.764 	"
+              />
+              <polygon
+                class="st0"
+                points="439.853,18.138 439.853,148.538 376.573,98.138 376.573,18.138 	"
+              />
+            </g>
+          </svg>
+          Home</a
+        >
+        <a href="./products.html"><i class="fa-solid fa-couch"></i>Products</a>
+        <a href="./about.html"><i class="fa-solid fa-book"></i>About</a>
+      </div>
+    </div>
+    <!-- sideCart -->
+    <div class="cartsideBar"></div>
+    <div class="cart-container">
+      <i class="fa-solid fa-xmark fa-incart fa-2x cross-nav"></i>
+      <h3>Your Bag</h3>
+      <div class="cart-items">
+        <!-- items here -->
+      </div>
+      <div class="last">
+        <h2 class="total_amount">Total : <span class="amount">0</span></h2>
+        <button>Checkout</button>
+      </div>
+    </div>
+    <!-- sideCart end -->
+
+    <div class="off-white">Home / Products</div>
+    <!-- main content -->
+    <div class="products_page_container">
+      <!--fixed sidebar  -->
+      <div class="choiceBar">
+        <!-- search -->
+        <form class="form1">
+          <input type="text" class="searchBar" placeholder="Search..." />
+        </form>
+        <!-- categories -->
+        <div class="companies">
+          <h4>Company</h4>
+          <ul class="comp_names">
+            <!-- companies here -->
+            <!--end of  companies here -->
+          </ul>
+        </div>
+        <!-- price filter -->
+        <div class="price">
+          <form class="form2">
+            <label for="price-range">Price</label><br />
+            <input
+              type="range"
+              name="price-range"
+              id="price-range"
+              min="0"
+              max="80"
+              class="rangeBar"
+            />
+          </form>
+          <p class="cyan-color">Value : $<span class="range-value">0</span></p>
+        </div>
+      </div>
+      <!-- fixed side bar ends -->
+      <div class="pro-page">
+        <h2 class="load">Loading...</h2>
+
+        <!-- single product -->
+
+        <!-- end single product -->
+      </div>
+    </div>
+
+    <script type="module" src="../static/js/main/products.js"></script>
+  </body>
+</html>
