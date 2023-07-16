@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: Inter var, ui-sans-serif, system-ui, -apple-system,
+    BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Noto Color Emoji"; */
+  font-family: "Poppins", sans-serif;
+  list-style: none;
+}
+.code {
+  cursor: pointer;
+}
+.code:hover {
+  color: #4f46e5;
+}
+.logo-head {
+  font-family: "Poppins", sans-serif;
+  /* letter-spacing: 1px; */
+}
+.ado {
+  border-radius: 0.5rem;
+}
+.bag {
+  height: 20px;
+  width: 20px;
+}
+.nu {
+  fill: #fcb244;
+}
+.un {
+  fill: #e4e2e2;
+}
+.js_choice1 {
+  outline-width: 2.5px;
+  outline-style: solid;
+}
+
+.b {
+  border: 1px solid #e8e5e5;
+  border-radius: 0.5rem;
+  padding: 10px 0;
+}
+.onc {
+  background: #4f46e5;
+  color: #fff;
+}
+.onc:hover {
+  background: #453ec6;
+}
+.b:focus {
+  outline: 2.5px solid #4f46e5;
+  outline-offset: 1.5px;
+}
+.bg:hover {
+  background: #f9fafa;
+}
+
+.fab_li {
+  list-style-position: outside;
+  margin: 4px 0;
+  padding-left: 6px;
+  list-style-image: url(../../images/circle-svgrepo-com.svg);
+}
+.s_policy {
+  background: #f9fafa;
+  border: 1px solid #e2e8f0;
+}
+
+.bor_b {
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.grid_r {
+  display: grid;
+  column-gap: 2rem;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  align-content: center;
+  justify-content: space-between;
+  padding: 40px 0;
+}
