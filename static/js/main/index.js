@@ -6,8 +6,7 @@ import { setupStore, store, findProduct } from "../others/store.js";
 import { getElement } from "../others/utils.js";
 
 const init = async () => {
-  if (store) {
-    console.log("hell");
+  if (store.length > 0) {
     const featured = store.filter((product) => product.featured === true);
     displayItems(featured, getElement(".featured-products"));
   } else {
