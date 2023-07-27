@@ -11,9 +11,23 @@ import { getElement } from "../others/utils.js";
 const initProduct = async () => {
   const id = window.location.search.slice(4);
   const product = await showSingleProduct(id);
+  const title = getElement("title");
+
+  const {
+    fields: { colors, name },
+  } = product;
+
+  title.textContent = `${name} | comfy`;
 
   if (product) {
     displaySingleProduct(product, getElement(".single_product_page"));
+    const colorsSec = getElement(".colors");
+    colors.forEach((color) => {
+      const span = document.createElement("span");
+      span.classList.add("clr");
+      span.style.background = `${color}`;
+      colorsSec.appendChild(span);
+    });
   }
 };
 

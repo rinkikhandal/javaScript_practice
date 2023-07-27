@@ -55,8 +55,7 @@ const displaySingleProduct = (product, element) => {
         <h3 class="company-name">BY ${company}</h3>
         <p class="price">${formatPrice(price)}</p>
         <div class="colors">
-          <span class="clr1 clr" style="background:${clr1}"></span>
-          <span class="clr2 clr" style="background:${clr2}"></span>
+          
         </div>
         <p class="des-para history-para">${description}</p>
         <button class="cart btn-type btn-single " data-id='${id}'>ADD TO CART</button>
