@@ -133,14 +133,16 @@ const displayCartItems = (products, element) => {
   });
 
   // remove btn=======
-  const removeBtn = element.querySelector(".remove-btn");
+  const removeBtns = element.querySelectorAll(".remove-btn");
 
-  removeBtn.addEventListener("click", (e) => {
-    const name =
-      e.currentTarget.parentElement.parentElement.querySelector(
-        "h4"
-      ).textContent;
-    removeItem(name, e);
+  removeBtns.forEach((btn) => {
+    btn.addEventListener("click", (e) => {
+      const name =
+        e.currentTarget.parentElement.parentElement.querySelector(
+          "h4"
+        ).textContent;
+      removeItem(name, e);
+    });
   });
 };
 
